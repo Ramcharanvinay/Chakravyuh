@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-inika: 'Inika', serif;
+    --font-poppins: 'Poppins', sans-serif;
+    --font-cantarell: 'Cantarell', sans-serif;
+    --font-mono: 'JetBrains Mono', 'Roboto Mono', monospace;
+    --font-serif: 'Source Serif 4', serif;
+  }
+}
+
+body {
+  font-family: var(--font-inter);
+  background-color: #050a1a;
+  color: #eef1f8;
+  min-height: 100vh;
+}
+
+.font-inter {
+  font-family: var(--font-inter);
+}
+
+.font-inika {
+  font-family: var(--font-inika);
+}
+
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+
+.font-cantarell {
+  font-family: var(--font-cantarell);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Floating Animation (Smooth vertical float with 0 angular rotation) */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: float 7s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float,
+  [style*="animation: float"] {
+    animation: none !important;
+  }
+}
+
+/* Glassmorphism & Neon Glows */
+.glass-panel {
+  background: rgba(10, 18, 38, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(56, 189, 248, 0.18);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel:hover {
+  border-color: rgba(47, 184, 255, 0.45);
+  box-shadow: 0 10px 35px -10px rgba(0, 210, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050a1a;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(47, 184, 255, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(47, 184, 255, 0.6);
+}
