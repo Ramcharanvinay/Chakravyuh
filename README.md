@@ -1,16 +1,38 @@
-# React + Vite
+# CHAKRAVYUH — Hackathon Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+An immersive, high-performance web experience for the CHAKRAVYUH Hackathon built with React 19, Tailwind CSS v4, Vite, and high-DPI canvas animations.
 
-Currently, two official plugins are available:
+## Features
+- **Interactive 5-Sector Wheel**: Exact geometric SVG sectors for Cybersecurity & Blockchain, Energy & Sustainability, Space Technology, Fintech, and Quantum Computing with sub-pixel hover/active highlighting.
+- **3D Cyberspace Grid & Wave Ribbons**: High-DPI real-time animated wave mesh and twinkling particle dust.
+- **Responsive Layout**: Balanced desktop 3-column layout and mobile-optimized navigation drawer.
+- **Track Details & Registration**: Interactive modals for exploring challenge statements and registering teams.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+- **Framework**: React 19
+- **Build Tool**: Vite 8
+- **Styling**: Tailwind CSS v4
+- **Icons**: Lucide React
+- **Audio Effects**: Web Audio API Sound Effects
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
+- Node.js (v18+ recommended)
+- npm or pnpm
 
-## Expanding the Oxlint configuration
+### Installation
+```bash
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Development Server
+```bash
+npm run dev
+```
+
+### Production Build
+```bash
+npm run build
+npm run preview
+```
